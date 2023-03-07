@@ -1,0 +1,29 @@
+# Table of contents
+
+- [Introduction](content/readme.md)
+- [Integrations](content/integrations/readme.md)
+  - [discord](content/integrations/discord/discord.md)
+  - [telegram](content/integrations/telegram/telegram.md)
+  - [voucher](content/integrations/voucher/voucher.md)
+  - [options](content/integrations/options/options.md)
+- [Configurations](content/configurations/readme.md)
+  - [issuance](content/configurations/issuance/readme.md)
+  - [verification](content/configurations/verification/readme.md)
+  - [wallet](content/configurations/wallet/readme.md)
+- [Platform guides](content/platform-guides/readme.md)
+  - discord
+    - [create bot](content/platform-guides/discord/create-bot.md)
+    - [setup bot](content/platform-guides/discord/setup-bot.md)
+  - telegram
+    - [create bot](content/platform-guides/telegram/create-bot.md)
+  - voucher
+    - [frontend](content/platform-guides/voucher/frontend.md)
+- [Usage demo](content/usage-examples/readme.md)
+  - [discord](content/usage-examples/discord/readme.md)
+    - [issuance](content/usage-examples/discord/issuance.md)
+    - [verification](content/usage-examples/discord/verification.md)
+    - [voucher-functionality](content/usage-examples/discord/voucher-functionality.md)
+  - [telegram](content/usage-examples/telegram/readme.md)
+    - [issuance](content/usage-examples/telegram/issuance.md)
+    - [verification](content/usage-examples/telegram/verification.md)
+    - [voucher-functionality](content/usage-examples/telegram/voucher-functionality.md)
