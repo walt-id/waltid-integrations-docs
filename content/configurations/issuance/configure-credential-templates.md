@@ -19,7 +19,7 @@ and remove)
 
 ```shell
 curl -X 'GET' \
-  'https://wallet.cheqd.walt-test.cloud/issuer-api/default/config/templates' \
+  'https://wallet.walt-test.cloud/issuer-api/default/config/templates' \
   -H 'accept: application/json'
 ```
 
@@ -171,7 +171,7 @@ By default, only the template ID will be shown, but the full template will not b
 
 ```shell
 curl -X 'GET' \
-  'https://wallet.cheqd.walt-test.cloud/issuer-api/default/config/templates/VerifiableId' \
+  'https://wallet.walt-test.cloud/issuer-api/default/config/templates/VerifiableId' \
   -H 'accept: application/json'
 ```
 
@@ -355,6 +355,6 @@ curl -X 'POST' \
 
 ```shell
 curl -X 'DELETE' \
-'https://wallet.cheqd.walt-test.cloud/issuer-api/default/config/templates/CrudeProductCredential' \
+'https://wallet.walt-test.cloud/issuer-api/default/config/templates/CrudeProductCredential' \
 -H 'accept: text/plain'
 ```

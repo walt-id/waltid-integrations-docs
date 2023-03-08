@@ -10,7 +10,7 @@ GET /issuer-api/{tenantId}/config/getConfiguration
 
 ```shell
 curl -X 'GET' \
-  'https://wallet.cheqd.walt-test.cloud/issuer-api/default/config/getConfiguration' \
+  'https://wallet.walt-test.cloud/issuer-api/default/config/getConfiguration' \
   -H 'accept: application/json'
 ```
 
@@ -18,13 +18,13 @@ Response:
 
 ```json
 {
-  "issuerUiUrl": "https://issuer.cheqd.walt-test.cloud",
-  "issuerApiUrl": "https://issuer.cheqd.walt-test.cloud/issuer-api/default",
+  "issuerUiUrl": "https://issuer.walt-test.cloud",
+  "issuerApiUrl": "https://issuer.walt-test.cloud/issuer-api/default",
   "issuerClientName": "walt.id Issuer Portal",
   "wallets": {
     "walt.id": {
       "id": "walt.id",
-      "url": "https://wallet.cheqd.walt-test.cloud",
+      "url": "https://wallet.walt-test.cloud",
       "description": "walt.id web wallet",
       "presentPath": "api/siop/initiatePresentation/",
       "receivePath": "api/siop/initiateIssuance/"
@@ -39,7 +39,7 @@ POST /issuer-api/{tenantId}/config/setConfiguration
 
 ```shell
 curl -X 'POST' \
-  'https://wallet.cheqd.walt-test.cloud/issuer-api/default/config/setConfiguration' \
+  'https://wallet.walt-test.cloud/issuer-api/default/config/setConfiguration' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d 'vv JSON BELOW vv'
@@ -47,14 +47,14 @@ curl -X 'POST' \
 
 ```json
 {
-  "issuerUiUrl": "https://issuer.cheqd.walt-test.cloud",
-  "issuerApiUrl": "https://issuer.cheqd.walt-test.cloud/issuer-api/default",
+  "issuerUiUrl": "https://issuer.walt-test.cloud",
+  "issuerApiUrl": "https://issuer.walt-test.cloud/issuer-api/default",
   "issuerClientName": "walt.id Issuer Portal",
   "issuerDid": "did:key:z6MknaJ7YLdkCq1QV2tcwVSY5uVfUKGfBdigo7g4PyipTnCc",
   "wallets": {
     "walt.id": {
       "id": "walt.id",
-      "url": "https://wallet.cheqd.walt-test.cloud",
+      "url": "https://wallet.walt-test.cloud",
       "description": "walt.id web wallet",
       "presentPath": "api/siop/initiatePresentation/",
       "receivePath": "api/siop/initiateIssuance/"
