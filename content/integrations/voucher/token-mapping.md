@@ -2,12 +2,11 @@
 
 Token mapping can be performed by `CSV upload` feature.
 
-Prepare a CSV file with mapping the specific tokens to credential issuance data.
-You can:
+Prepare a CSV file with mapping the specific tokens to credential issuance data. You can:
 
-- specify a credential template
-- override that template with specific data for a specific token
-- issue multiple credentials (simply add another one to the JSON list)
+* specify a credential template
+* override that template with specific data for a specific token
+* issue multiple credentials (simply add another one to the JSON list)
 
 Example `sample-csv.csv`:
 
@@ -19,23 +18,18 @@ CCCCCCCC-3333-ZZZZ-9999-123456789012;{"credentials":[{"credentialData":{"credent
 
 {% tabs %}
 {% tab title="Discord" %}
-
-See [voucher functionality](/content/usage-examples/discord/voucher-functionality.md)
-from [discord demo](/content/usage-examples/discord/readme.md).
-
+See [voucher functionality](../../usage-examples/discord/voucher-functionality.md) from [discord demo](../../usage-examples/discord/).
 {% endtab %}
+
 {% tab title="Telegram" %}
-
 TODO
-
 {% endtab %}
-{% tab title="Web" %}
 
+{% tab title="Web" %}
 To upload the CSV, simply POST it as body to /voucher/config/setup
 
 ```shell
 curl --data-binary "@sample-csv.csv" https://integrations.walt-test.cloud/voucher/config/setup
 ```
-
 {% endtab %}
 {% endtabs %}
