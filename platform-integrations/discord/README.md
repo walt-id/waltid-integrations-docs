@@ -4,6 +4,8 @@
 
 Walt.id integrations brings SSI to Discord, enabling issuance and verification of Verifiable Credentials in your channels and guilds.
 
+{% embed url="https://youtu.be/kAn7oVXwW4g" %}
+
 ### Getting Started
 
 Make sure you went through the [Quick Start](../../getting-started/quick-start.md) or the [Local/Production Setup](../../getting-started/local-production-setup/) before continuing.
