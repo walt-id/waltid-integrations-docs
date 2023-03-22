@@ -1,46 +1,28 @@
-# Table of contents
+# Intro
 
-* [Introduction](content/)
-* [Integrations](content/integrations/)
-  * [discord](content/integrations/discord/discord.md)
-  * [telegram](content/integrations/telegram/telegram.md)
-  * [voucher](content/integrations/voucher/voucher.md)
-    * [token-mapping](content/integrations/voucher/token-mapping.md)
-  * [options](content/integrations/options/options.md)
-* [Configurations](content/configurations/)
-  * [issuance](content/configurations/issuance/)
-    * [create issuer tenant](content/configurations/issuance/create-issuer-tenant.md)
-    * [create tenant did](content/configurations/issuance/create-tenant-did.md)
-      * [create did](content/configurations/issuance/tenant-did/create-did.md)
-      * [import did](content/configurations/issuance/tenant-did/import-did.md)
-        * [import key](content/configurations/issuance/tenant-did/import-key.md)
-    * [update issuer configuration](content/configurations/issuance/setup-issuer-configuration.md)
-    * [credential templates](content/configurations/issuance/configure-credential-templates.md)
-  * [WalletKit](content/configurations/walletkit-configuration/)
-* [Platform guides](content/platform-guides/)
-  * discord
-    * [create bot](content/platform-guides/discord/create-bot.md)
-    * [setup bot](content/platform-guides/discord/setup-bot.md)
-  * telegram
-    * [create bot](content/platform-guides/telegram/create-bot.md)
-  * voucher
-    * [frontend](content/platform-guides/voucher/frontend.md)
-* Functionality
-  * [issuance](content/functionality/issuance/issuance.md)
-  * verification
-    * [same device flow](content/functionality/verification/flows/same-device.md)
-    * [cross device flow](content/functionality/verification/flows/cross-device.md)
-    * [callbacks](content/functionality/verification/callbacks.md)
-  * [revocation](content/functionality/revocation/)
-    * [revocation tokens](content/functionality/revocation/tokens/tokens.md)
-    * [check token revocation status](content/functionality/revocation/check.md)
-    * [request token revocation](content/functionality/revocation/revoke.md)
-* [Usage demo](content/usage-examples/)
-  * [discord](content/usage-examples/discord/)
-    * [issuance](content/usage-examples/discord/issuance.md)
-    * [verification](content/usage-examples/discord/verification.md)
-    * [voucher-functionality](content/usage-examples/discord/voucher-functionality.md)
-  * [telegram](content/usage-examples/telegram/)
-    * [issuance](content/usage-examples/telegram/issuance.md)
-    * [verification](content/usage-examples/telegram/verification.md)
-    * [voucher-functionality](content/usage-examples/telegram/voucher-functionality.md)
+Walt.id integrations, makes it easy to use SSI on other platforms. As an extension of the walt.id [_WalletKit_](https://docs.walt.id/v/web-wallet/wallet-kit/readme) __ product, it facilitates SIOP interactions for applications implementing SSI workflows (issuance and verification).
+
+
+
+**Supported Platforms**
+
+* [Discord](platform-integrations/discord/) - Issue and verify verifiable credentials via a Discord bot
+* [Telegram](platform-integrations/telegram/) - Issue and verify verifiable credentials via a Telegram
+* [Web | Voucher](platform-integrations/web-or-voucher/) - allow users to redeem voucher codes and receive verifiable credentials
+
+
+
+**Quick Start**
+
+* [Quick Start](getting-started/quick-start.md) - Try it with the platform of your choice in no time
+
+
+
+**Local/Production Setup**
+
+Before beginning the platform-specific configurations and setup, we need to **set up the wallet-kit and waltid-integrations**. The latter will use the wallet-kit's features. For more information on how they interact, please refer to the [architecture section](deep-dive/architecture.md).
+
+* [Waltid-Integrations](getting-started/local-production-setup/waltid-integrations.md) - Implements platform logic and forwards + transforms requests and responses to/from wallet-kit.
+* [Web-Wallet](getting-started/local-production-setup/web-wallet.md) - An SSI wallet for users to receive credentials
+* [Wallet-Kit](getting-started/local-production-setup/wallet-kit/) - Handles VC issuance and verification based on waltid-integrations input.
+
