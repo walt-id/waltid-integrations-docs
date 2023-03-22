@@ -4,6 +4,8 @@
 
 Walt.id integrations brings SSI to Telegram, enabling issuance and verification of Verifiable Credentials in your group chats.
 
+{% embed url="https://youtu.be/7g7-v5JHEys" %}
+
 ### Getting Started
 
 Make sure you went through the [Quick Start](../../getting-started/quick-start.md) or the [Local/Production Setup](../../getting-started/local-production-setup/) before continuing.
